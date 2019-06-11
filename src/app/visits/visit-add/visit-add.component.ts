@@ -36,37 +36,6 @@ import {Owner} from '../../owners/owner';
   styleUrls: ['./visit-add.component.css']
 })
 export class VisitAddComponent implements OnInit {
-
-  // just copy of demo datepicker - changes needed
-
-  isRequired = false;
-  isDisabled = false;
-  isOpenOnFocus = false;
-  isOpen = false;
-  today: Date = new Date();
-  type: string = 'date';
-  types: Array<any> = [
-    { text: 'Date', value: 'date' },
-    { text: 'Time', value: 'time' },
-    { text: 'Date Time', value: 'datetime' }];
-
-  mode: string = 'auto';
-  modes: Array<any> = [
-    { text: 'Auto', value: 'auto' },
-    { text: 'Portrait', value: 'portrait' },
-    { text: 'Landscape', value: 'landscape' }];
-
-  container: string = 'inline';
-  containers: Array<any> = [
-    { text: 'Inline', value: 'inline' },
-    { text: 'Dialog', value: 'dialog' }];
-
-  date: Date = null;
-
-  dateFormat: string = 'yyyy/MM/dd';
-
-  //  end copy datepicker demo
-
   visit: Visit;
   current_pet: Pet;
   current_owner: Owner;
